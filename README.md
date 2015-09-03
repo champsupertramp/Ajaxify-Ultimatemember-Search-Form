@@ -4,9 +4,10 @@ Enables member directory to search with ajax
 ###Installation
 
  - Download and extract the plugin, and copy the plugin folder into your wp-content/plugins directory and activate.
- - Go to Admin dashboard > Ultimate Member > Member directories and edit/aa a directory.
+ - Go to Admin dashboard > Ultimate Member > Member directories and edit/add  directory.
  - Scroll at the bottom page to see the ajax settings 
  - Enable Search with Ajax by switching it to "Yes".
+ - That's just it!
 
 Write your feature/issue [here](https://github.com/champsupertramp/Ajaxify-Ultimatemember-Search-Form/issues).
 
