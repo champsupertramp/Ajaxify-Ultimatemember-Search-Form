@@ -1,9 +1,10 @@
-## WordPress Ultimate Member: Live Ajax Search Directory Plugin
+### WordPress Ultimate Member: Live Ajax Search Directory Plugin
 [![AUMD]](https://raw.githubusercontent.com/champsupertramp/Ajaxify-Ultimatemember-Search-Form/docs/ajaxify-ultimate-member-directory.png)]
 
 This plugin enables member directory to `search members via ajax`. This also works on top of `gravityform` content fields. It comes with an `NProgressbar`(slim progress bars like on YouTube, Medium, etc) when loading profiles. 
 
-###Installation
+
+#####Installation
 ------------------
  - Download and extract the plugin, and copy the plugin folder into your wp-content/plugins directory and activate.
  - Go to `Admin dashboard` > `Ultimate Member` > `Member directories` and `edit/add a directory`.
@@ -11,24 +12,29 @@ This plugin enables member directory to `search members via ajax`. This also wor
  - Enable Search with Ajax by switching it to "Yes".
  - That's just it!
 
-### Bug Reporting / Feature Request
+
+##### Bug Reporting / Feature Request
 ------------------
 Write [here](https://github.com/champsupertramp/Ajaxify-Ultimatemember-Search-Form/issues).
 
-###License
+
+#####License
 ------------------
 The plugin is **free** to use both personal and commercial. If you used commercial, **please credit**.
 Read more about GNU [license.txt](http://www.gnu.org/licenses/gpl-2.0.txt)
+
 
 #####Authored and Maintained by
 ------------------
 - Champ Camba [www.champ.ninja](http://www.champ.ninja)
 - ***Hire me hey@champ.ninja***
 
+
 #####Credits
 ------------------
 - [NProgress](https://github.com/rstacruz/nprogress) by Rico StaCruz
 - [Skelet Framework](https://github.com/champsupertramp/skelet) by PressApps & new branch by www.champ.ninja
+
 
 #####Donate
 ------------------ 
