@@ -1,7 +1,5 @@
 ### WordPress Ultimate Member: Live Ajax Search Directory Plugin
-[![AUMD](https://raw.githubusercontent.com/champsupertramp/Ajaxify-Ultimatemember-Search-Form/docs/ajaxify-ultimate-member-directory.png)]
-
-This plugin enables member directory to `search members via ajax`. This also works on top of `gravityform` content fields. It comes with an `NProgressbar`(slim progress bars like on YouTube, Medium, etc) when loading profiles. 
+| ![AUMD](https://raw.githubusercontent.com/champsupertramp/Ajaxify-Ultimatemember-Search-Form/docs/ajaxify-ultimate-member-directory.png|width=200px) | This plugin enables member directory to `search members via ajax`. This also works on top of `gravityform` content fields. It comes with an `NProgressbar`(slim progress bars like on YouTube, Medium, etc) when loading profiles. |
 
 
 #####Installation
