@@ -1,4 +1,4 @@
-# Ultimatemember: Live Ajax Search Directory
+# Ultimatemember: Live Ajax Search Directory Plugin
 Enables member directory to search with ajax
 
 ###Installation
