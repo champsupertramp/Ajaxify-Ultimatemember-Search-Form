@@ -1,5 +1,5 @@
-# Ultimatemember: Live Ajax Search Directory Plugin
-Enables member directory to search with ajax
+# WordPress Ultimate Member: Live Ajax Search Directory Plugin
+This plugin enables member directory to search members via Ajax. This also works on top of a gravity content field.
 
 ###Installation
 
