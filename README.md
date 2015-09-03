@@ -39,3 +39,8 @@ Read more about GNU [license.txt](http://www.gnu.org/licenses/gpl-2.0.txt)
 #####Donate
 ------------------ 
 For continuous development, please [![Donate](https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FSCA3GGS7ERDS)
+
+### Changelog
+-----------
+*	v 1.0.0 - Initial Release
+
