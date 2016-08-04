@@ -12,11 +12,11 @@ var AJAXIFY_UM = {
               var $umform = $(".um-search form ");
               var $gform = $("#gform_1");
 
-          
+
             if(  $("#aumd-ajaxify-wrapper").length > 0 &&  $umform.length > 0 ||  $gform.length > 0 ){
                   var $form = null;
 
-                  
+
                   if( $umform.length > 0 ){
                     $form = $umform;
                   }else{
@@ -28,16 +28,16 @@ var AJAXIFY_UM = {
                 			e.preventDefault();
 
                 				var search_param = $form.find('.um-search-filter input').serialize();
-                 				
+
                  				AJAXIFY_UM.common.search_users( search_param );
-                 				
-                			
+
+
                 			return false;
 
                 	});
 
                   $form.append('<div class="um-search-filter"><input name="members_page" type="hidden" value="1" /></div>');
-                	
+
                 	$(".um-search-submit a.um-button.um-alt",$form).click(function(e){
                		      e.preventDefault();
 
@@ -50,18 +50,18 @@ var AJAXIFY_UM = {
                 				$('select',$form).select2("close");
                 				$('select',$form).trigger("change");
                         $('input[type=hidden][name=members_page]').val( 1 );
-                
+
 
                 				if ( history.pushState ) {
                      			history.pushState( {}, document.title, location.protocol + '//' + location.host + location.pathname);
                      		}
-            
+
                         var search_param = $form.find('.um-search-filter input').serialize();
-                        
+
                         AJAXIFY_UM.common.search_users(  search_param );
-                                
+
         				     return false;
-                	
+
         			     });
 
                   if( $('div.um-members-pagi').size() <= 0){
@@ -69,7 +69,7 @@ var AJAXIFY_UM = {
                   }
                   var $paginate_wrap = $('div.um-members-pagi');
                   AJAXIFY_UM.common.bind_paginate( $paginate_wrap );
-   
+
             }
         },
         search_users: function( params ){
@@ -87,9 +87,9 @@ var AJAXIFY_UM = {
             var $ajax_wrapper = $("#aumd-ajaxify-wrapper");
             var post_id = $ajax_wrapper.data("post-id");
                 $ajax_wrapper.addClass('aumd-loading');
-            // Load progress 
+            // Load progress
             NProgress.start();
-           
+
             $.ajax({
               type: "POST",
               url: ultimatemember_ajax_url,
@@ -116,13 +116,14 @@ var AJAXIFY_UM = {
                 var total_members = ( d.result.total_users+' Member'+(d.result.total_users > 1?'s':''));
                 $("div[class=um-members]").remove();
 
+
                 if(  d.result.total_users > 0 ){
-                   
+
                     $ajax_wrapper.html( d );
                     $total_members.text(total_members);
                     $total_members.show();
                     $("div[class=um-members-none]").hide();
-                   
+
                     if( $total_members.length <= 0 ){
                          $ajax_wrapper.html('<div class="um-members-intro"><div class="um-members-total">'+total_members+'</div></div>');
                     }
@@ -131,22 +132,24 @@ var AJAXIFY_UM = {
                     $ajax_wrapper.html('<div class="um-members-none"><p>We are sorry. We cannot find any users who match your search criteria.</p></div>');
                     $total_members.hide();
                 }
-                
+
                 $("div[class=um-members]").css("opacity","1");
                 $ajax_wrapper.css("opacity","1");
                 um_responsive();
                  AJAXIFY_UM.common.paginate(  d.result );
-                
+
                 // done searching
                 NProgress.done();
                 $ajax_wrapper.removeClass('aumd-loading');
+
+
 
             }).error(function( e ){
                 console.log( e );
             });
         },
         paginate: function( d ){
-         	 
+
           var $paginate_wrap = $("div.um-members-pagi");
 
               $paginate_wrap.empty();
@@ -184,10 +187,12 @@ var AJAXIFY_UM = {
                   }
                 });
             }
-               
+
             $paginate_wrap.html(html.join(''));
             AJAXIFY_UM.common.bind_paginate( $paginate_wrap );
-   
+						$(".masonry").remove();
+
+
 
         },
         bind_paginate: function( $elem ){
@@ -206,10 +211,10 @@ var AJAXIFY_UM = {
                 $('input[type=hidden][name=members_page]').val( $page_id );
                 var search_param = $form.find('.um-search-filter input').serialize();
                 AJAXIFY_UM.common.search_users( search_param );
-                
+
                 return false;
             });
-            
+
         }
     }
 };
@@ -232,7 +237,7 @@ var UTIL = {
     });
   }
 };
-	
+
 // Shuffle Array
 $.fn.shuffle = function() {
     return this.each(function(){
@@ -240,7 +245,7 @@ $.fn.shuffle = function() {
         return (items.length) ? $(this).html($.shuffle(items)) : this;
     });
 }
- 
+
 $.shuffle = function(arr) {
     for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
     return arr;
@@ -254,7 +259,7 @@ function getParameterByName(name, url) {
 }
 
 /**
- * ValidEmail 
+ * ValidEmail
  * @author Andrew Chalkley
  * @link  https://github.com/chalkers/validEmail
  */
@@ -280,7 +285,7 @@ function getParameterByName(name, url) {
     function applyCode($input) {
       check($input) ? success.call($input.get(0)) : failure.call($input.get(0));
     }
-  
+
     if (typeof on === "string")
       $input.bind(on, function() { applyCode($(this)); });
 
